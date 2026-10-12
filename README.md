@@ -1,10 +1,12 @@
 # Web Security Writeups
 
-Разборы лаб [PortSwigger Web Security Academy](https://portswigger.net/web-security).
+Разборы PortSwigger Web Security Academy + real-world engagements.
 
 **Автор:** [@paramonoff2018](https://github.com/paramonoff2018)
 
 ## Прогресс
+
+### PortSwigger Web Security Academy
 
 | Тема | Пройдено | Всего |
 |---|---|---|
@@ -16,6 +18,12 @@
 
 **Всего:** 2 / 83
 
+### Real-World Bug Bounty
+
+| Программа | Период | Векторов проверено | Найдено |
+|---|---|---|---|
+| [Central University (Т-Банк)](./real-world/central-university-2026/) | окт 2026 | 12 | 0 |
+
 ## Структура
 
 - `csrf/` — Cross-Site Request Forgery
@@ -23,4 +31,9 @@
 - `xss/` — Cross-Site Scripting
 - `access-control/` — контроль доступа
 - `authentication/` — аутентификация
+- `real-world/` — разборы реальных bug bounty программ
 - `templates/` — шаблон write-up'а
+
+## Disclaimer
+
+Все материалы — публичная информация. Никаких куки, токенов, PII, внутренних ID. Engagement проводился в рамках правил публичной bug bounty программы.
