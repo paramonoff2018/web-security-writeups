@@ -14,9 +14,9 @@
 | [SQL Injection](./sqli/) | 1 | 18 |
 | [XSS](./xss/) | 0 | 30 |
 | [Access Control](./access-control/) | 0 | 13 |
-| [Authentication](./authentication/) | 0 | 14 |
+| [Authentication](./authentication/) | 1 | 14 |
 
-**Всего:** 2 / 83
+**Всего:** 3 / 83
 
 ### Real-World Bug Bounty
 
