@@ -11,15 +11,25 @@
 - **API:** `api.vkvideo.ru` (RPC-подобная архитектура `method/*`), `api.live.vkvideo.ru`
 - **CMS:** Joomla (на отдельных частях)
 
-## Разведка и первые результаты
-- Собран трафик через Burp Suite.
-- Проверены методы `getOwnerStats` и `video.get` — оба требуют строгой авторизации (`error_code: 5`), IDOR не подтвержден.
-- Обнаружены эндпоинты управления Live-стримами (`PUT /v8/channel/...`).
+## Ход исследования (Recon & Testing)
 
-## План работ
-1. Парсинг JS-бандлов (LinkFinder) для поиска скрытых API.
-2. Поиск IDOR в Live-стримах и старом PHP-коде (`al_video.php`).
-3. Тестирование Race Condition на метриках просмотров.
+### 1. Сбор трафика и Scope
+- Настроен Burp Suite (Scope: `*.vkvideo.ru`, Match&Replace: `X-Bug-Bounty`).
+- Проанализирован трафик кабинета автора (`cabinet.vkvideo.ru`) и видеосервиса (`vkvideo.ru`).
+
+### 2. Проверка API Методов
+- **`statsVideoDashboard.getOwnerStats`**: При подмене `owner_id` на чужой канал возвращает `error_code: 5` (User authorization failed). Защита работает корректно.
+- **`video.get`**: При попытке запросить публичное видео через ручной запрос возвращает `error_code: 5`. Метод требует авторизации.
+- **Вывод:** Классические методы VK API защищены проверкой прав на уровне шлюза.
+
+### 3. Анализ JavaScript (Recon)
+С помощью инструмента **LinkFinder** был проведен статический анализ JS-бандлов (скачаны с `st1-28.vkvideo.ru`).
+- В файле `ads_light` (рекламный модуль) обнаружен внутренний API: `https://akashi.vk-portal.net/api/v1/web`. Прямой запрос возвращает `403 Forbidden`.
+- Также найдены эндпоинты для сбора метрик (`/api/perf/upload`, `/api/crash/uploadBatch`).
+
+## План дальнейших работ
+1. Тестирование Legacy PHP-эндпоинтов (`/al_video.php`, `/usefull.php`) на предмет IDOR и Business Logic.
+2. Проверка `PUT /v8/channel/...` на `api.live.vkvideo.ru` (Broken Access Control / захват чужого стрима).
 
 ---
 *Примечание: Все материалы публичны. Согласно правилам программы, никакие приватные данные, куки или токены не публикуются. Использовался только ручной тест в рамках скоупа.*
