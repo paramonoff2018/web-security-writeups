@@ -15,8 +15,10 @@
 | [XSS](./xss/) | 0 | 30 |
 | [Access Control](./access-control/) | 0 | 13 |
 | [Authentication](./authentication/) | 1 | 14 |
+| [API testing](./api-testing/) | 1 | 5 |
 
-**Всего:** 3 / 83
+
+**Всего:** 4 / 83
 
 ### Real-World Bug Bounty
 
@@ -31,6 +33,7 @@
 - `xss/` — Cross-Site Scripting
 - `access-control/` — контроль доступа
 - `authentication/` — аутентификация
+- `api-testing/` — API testing (документация, скрытые эндпоинты)
 - `real-world/` — разборы реальных bug bounty программ
 - `templates/` — шаблон write-up'а
 
