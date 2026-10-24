@@ -17,9 +17,9 @@
 | [Authentication](./authentication/) | 1 | 14 |
 | [API testing](./api-testing/) | 1 | 5 |
 | [Web LLM Attacks](./web-llm-attacks/) | 1 | 3 |
+| [Web Cache Deception](./web-cache-deception/) | 1 | 13 |
 
-
-**Всего:** 5 / 83
+**Всего:** 6 / 83
 
 ### Real-World Bug Bounty
 
@@ -35,7 +35,8 @@
 - `access-control/` — контроль доступа
 - `authentication/` — аутентификация
 - `api-testing/` — API testing (документация, скрытые эндпоинты)
-* `web-llm-attacks/` — атаки на интеграции LLM (prompt injection, excessive agency)
+- `web-llm-attacks/` — атаки на интеграции LLM (prompt injection, excessive agency)
+- `web-cache-deception/` — обман веб-кэша (path mapping, static extension, delimiters)
 - `real-world/` — разборы реальных bug bounty программ
 - `templates/` — шаблон write-up'а
 
