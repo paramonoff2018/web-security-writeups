@@ -18,8 +18,8 @@
 | [API testing](./api-testing/) | 1 | 5 |
 | [Web LLM Attacks](./web-llm-attacks/) | 1 | 3 |
 | [Web Cache Deception](./web-cache-deception/) | 1 | 13 |
-
-**Всего:** 6 / 83
+| [Path Traversal](./path-traversal/) | 1 | 6 |
+**Всего:** 7 / 89
 
 ### Real-World Bug Bounty
 
@@ -37,6 +37,7 @@
 - `api-testing/` — API testing (документация, скрытые эндпоинты)
 - `web-llm-attacks/` — атаки на интеграции LLM (prompt injection, excessive agency)
 - `web-cache-deception/` — обман веб-кэша (path mapping, static extension, delimiters)
+- `path-traversal/` — обход файловых путей
 - `real-world/` — разборы реальных bug bounty программ
 - `templates/` — шаблон write-up'а
 
