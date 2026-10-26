@@ -17,9 +17,9 @@
 | [Authentication](./authentication/) | 1 | 14 |
 | [API testing](./api-testing/) | 1 | 5 |
 | [Web LLM Attacks](./web-llm-attacks/) | 1 | 3 |
-| [Web Cache Deception](./web-cache-deception/) | 1 | 13 |
+| [Web Cache Deception](./web-cache-deception/) | 2 | 13 |
 | [Path Traversal](./path-traversal/) | 1 | 6 |
-**Всего:** 7 / 89
+**Всего:** 8 / 89
 
 ### Real-World Bug Bounty
 
