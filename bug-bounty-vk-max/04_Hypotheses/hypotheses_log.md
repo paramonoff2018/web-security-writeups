@@ -22,6 +22,7 @@
 - [-] **OAuth Callback (`/oauth/callback`)**: Подмена `code` и `code_verifier` возвращает 400. PKCE защищен.
 - [-] **Создание интеграции (`POST /integrations`)**: Возвращает 400 (invalid request / некорректный логотип). Требуется сложная валидация, которую мы не прошли.
 - [-] **`/method/execute` (метод `users.get`)**: Ошибка 1050 (недостаточно прав для профиля `SelfEmployed`).
+- [-] **Race Condition на создании канала**: Создание канала происходит не через HTTP POST, а через WebSocket (`GET /websocket`, код 101). Для тестирования Race Condition потребуется написание Python-скрипта (asyncio + websockets).
 
 ## 🟡 Требует доработки
 - [!] **`POST /method/execute`**: Сервер выполняет код, но требует валидный `access_token`. Нужно найти способ получить актуальный токен (из мобильного приложения или через OAuth callback).
