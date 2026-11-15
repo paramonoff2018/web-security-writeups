@@ -1,4 +1,4 @@
-# Web Security Writeups
+﻿# Web Security Writeups
 
 Разборы PortSwigger Web Security Academy + real-world engagements.
 
@@ -11,15 +11,18 @@
 | Тема | Пройдено | Всего |
 |---|---|---|
 | [CSRF](./csrf/) | 1 | 8 |
-| [SQL Injection](./sqli/) | 1 | 18 |
+| [SQL Injection](./sqli/) | 2 | 18 |
 | [XSS](./xss/) | 0 | 30 |
 | [Access Control](./access-control/) | 0 | 13 |
 | [Authentication](./authentication/) | 1 | 14 |
-| [API testing](./api-testing/) | 1 | 5 |
-| [Web LLM Attacks](./web-llm-attacks/) | 1 | 3 |
+| [API testing](./api-testing/) | 2 | 5 |
+| [Web LLM Attacks](./web-llm-attacks/) | 2 | 3 |
 | [Web Cache Deception](./web-cache-deception/) | 2 | 13 |
 | [Path Traversal](./path-traversal/) | 1 | 6 |
-**Всего:** 8 / 89
+| [NoSQL Injection](./nosql-injection/) | 1 | 4 |
+| [Race Conditions](./race-conditions/) | 2 | 6 |
+
+**Всего:** 14 / 120
 
 ### Real-World Bug Bounty
 
@@ -29,17 +32,20 @@
 
 ## Структура
 
-- `csrf/` — Cross-Site Request Forgery
-- `sqli/` — SQL Injection
-- `xss/` — Cross-Site Scripting
-- `access-control/` — контроль доступа
-- `authentication/` — аутентификация
-- `api-testing/` — API testing (документация, скрытые эндпоинты)
-- `web-llm-attacks/` — атаки на интеграции LLM (prompt injection, excessive agency)
-- `web-cache-deception/` — обман веб-кэша (path mapping, static extension, delimiters)
-- `path-traversal/` — обход файловых путей
-- `real-world/` — разборы реальных bug bounty программ
-- `templates/` — шаблон write-up'а
+- csrf/ — Cross-Site Request Forgery
+- sqli/ — SQL Injection
+- xss/ — Cross-Site Scripting
+- ccess-control/ — контроль доступа
+- uthentication/ — аутентификация
+- pi-testing/ — API testing (документация, скрытые эндпоинты)
+- web-llm-attacks/ — атаки на интеграции LLM (prompt injection, excessive agency)
+- web-cache-deception/ — обман веб-кэша (path mapping, static extension, delimiters)
+- path-traversal/ — обход файловых путей
+- 
+osql-injection/ — NoSQL Injection (MongoDB)
+- ace-conditions/ — Race Conditions (гонки состояний)
+- eal-world/ — разборы реальных bug bounty программ
+- 	emplates/ — шаблон write-up'а
 
 ## Disclaimer
 
