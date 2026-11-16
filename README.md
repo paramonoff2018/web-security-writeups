@@ -21,8 +21,9 @@
 | [Path Traversal](./path-traversal/) | 1 | 6 |
 | [NoSQL Injection](./nosql-injection/) | 1 | 4 |
 | [Race Conditions](./race-conditions/) | 2 | 6 |
+| [XML External Entity (XXE)](./xxe/) | 1 | 9 |
 
-**Всего:** 14 / 120
+**Всего:** 15 / 129
 
 ### Real-World Bug Bounty
 
@@ -44,6 +45,7 @@
 - 
 osql-injection/ — NoSQL Injection (MongoDB)
 - ace-conditions/ — Race Conditions (гонки состояний)
+- xxe/ — XML External Entity Injection
 - eal-world/ — разборы реальных bug bounty программ
 - 	emplates/ — шаблон write-up'а
 
