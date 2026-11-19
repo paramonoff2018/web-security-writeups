@@ -38,18 +38,17 @@ _Последнее решённое: XSS → Reflected XSS в HTML-контек
 - csrf/ — Cross-Site Request Forgery
 - sqli/ — SQL Injection
 - xss/ — Cross-Site Scripting
-- ccess-control/ — контроль доступа
-- uthentication/ — аутентификация
-- pi-testing/ — API testing (документация, скрытые эндпоинты)
+- access-control/ — контроль доступа
+- authentication/ — аутентификация
+- api-testing/ — API testing (документация, скрытые эндпоинты)
 - web-llm-attacks/ — атаки на интеграции LLM (prompt injection, excessive agency)
 - web-cache-deception/ — обман веб-кэша (path mapping, static extension, delimiters)
 - path-traversal/ — обход файловых путей
-- 
-osql-injection/ — NoSQL Injection (MongoDB)
-- ace-conditions/ — Race Conditions (гонки состояний)
+- nosql-injection/ — NoSQL Injection (MongoDB)
+- race-conditions/ — Race Conditions (гонки состояний)
 - xxe/ — XML External Entity Injection
-- eal-world/ — разборы реальных bug bounty программ
-- 	emplates/ — шаблон write-up'а
+- real-world/ — разборы реальных bug bounty программ
+- templates/ — шаблон write-up'а
 
 ## Disclaimer
 
