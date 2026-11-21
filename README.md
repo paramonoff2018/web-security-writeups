@@ -1,4 +1,4 @@
-﻿# Web Security Writeups
+# Web Security Writeups
 
 Разборы PortSwigger Web Security Academy + real-world engagements.
 
@@ -12,7 +12,7 @@
 |---|---|---|
 | [CSRF](./csrf/) | 1 | 8 |
 | [SQL Injection](./sqli/) | 2 | 18 |
-| [XSS](./xss/) | 1 | 30 |
+| [XSS](./xss/) | 2 | 30 |
 | [Access Control](./access-control/) | 0 | 13 |
 | [Authentication](./authentication/) | 1 | 14 |
 | [API testing](./api-testing/) | 2 | 5 |
@@ -23,9 +23,9 @@
 | [Race Conditions](./race-conditions/) | 2 | 6 |
 | [XML External Entity (XXE)](./xxe/) | 1 | 9 |
 
-**Всего:** 16 / 129
+**Всего:** 17 / 129
 
-_Последнее решённое: XSS → Reflected XSS в HTML-контексте без кодирования — `<script>alert(1)</script>` через `?search=`, сервер вставляет в HTML as-is._
+_Последнее решённое: XSS → Stored XSS в HTML-контексте без кодирования — комментарий сохраняется на сервере и выполняется при просмотре поста._
 
 ### Real-World Bug Bounty
 
