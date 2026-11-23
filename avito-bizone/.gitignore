@@ -1,0 +1,26 @@
+# === Секреты и локальные доступы — НИКОГДА не коммитить ===
+.env
+.env.*
+!.env.example
+
+# Тестовые аккаунты / токены (реальные значения)
+_notes/ACCOUNTS.md
+_notes/accounts/
+**/ACCOUNTS.md
+
+# Локальные артефакты пентеста
+*.har
+*.pcap
+*.log
+raw_logs/
+filtered/
+local/
+scratch/
+burp/
+*.burp
+
+# Ключи и печеньки
+*.key
+*.pem
+cookies.json
+tokens.json
