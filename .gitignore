@@ -1,0 +1,9 @@
+.env
+logs/
+raw_logs/
+filtered/
+burp/
+*.burp
+*.log
+*.har
+poc/
