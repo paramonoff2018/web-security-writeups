@@ -1,3 +1,13 @@
+.env
+logs/
+raw_logs/
+filtered/
+burp/
+*.burp
+*.log
+*.har
+poc/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -17,7 +27,5 @@ Thumbs.db
 *.iml
 
 # Local
-*.log
-.har
 local/
 scratch/
